@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header */
+
+.header-bar {
+  @apply z-50 flex items-center backdrop-blur-sm bg-primary/70;
+}
+
+.logo {
+  @apply mr-5;
+}
+
+.header-bar a {
+  @apply opacity-70 hover:opacity-100;
+}
+
+.links {
+  @apply hidden md:flex items-center gap-6;
+}
+.iletisim {
+  @apply hidden md:block ml-auto;
+}
+
+.hamburger-menu {
+  @apply md:hidden ml-auto text-secondary text-2xl;
+}
+
+/* Footer */
+
+.footer-bar {
+  @apply flex items-center justify-center;
+}
+
+/* hero section */
+
+.hero-section {
+  @apply flex flex-wrap justify-between w-full gap-5;
+}
+
+.hero-heading {
+  @apply text-5xl md:text-7xl font-extrabold;
+}
+
+.hero-p {
+  @apply mt-8;
+}
+
+.hero-image {
+  @apply relative w-[400px] h-[600px] m-auto xl:m-0;
+}
